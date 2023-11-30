@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="dist/output.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Home- Startx Indonesia</title>
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header
+      class="fixed bg-transparent top-0 left-0 w-full flex items-center z-10 drop-shadow-md font-Poppins transition duration-300"
+    >
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between relative">
+          <div class="px-6 lg:px-[75px]">
+            <a href="#home" class="font-bold text-xl text-[#4b77be] block py-6"
+              >STARTXINDONESIA</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <!-- navbar start -->
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="font-semibold text-[#4b77be] py-3 mx-3 flex justify-center hover:text-[#4b77be] transition duration-200"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="dist/pages/profile.html"
+                    class="font-semibold text-slate-700 py-3 mx-3 flex justify-center hover:text-[#4b77be] transition duration-200"
+                    >Profile</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#skills"
+                    class="font-semibold text-slate-700 py-3 mx-3 flex justify-center hover:text-[#4b77be] transition duration-200"
+                    >Layanan</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#projects"
+                    class="font-semibold text-slate-700 py-3 mx-3 flex justify-center hover:text-[#4b77be] transition duration-200"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#experience"
+                    class="font-semibold text-slate-700 py-3 mx-3 flex justify-center hover:text-[#4b77be] transition duration-200"
+                    >Karir</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="font-semibold text-slate-700 py-3 mx-3 flex justify-center hover:text-[#4b77be] transition duration-200"
+                    >Kontak</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!-- navbar end -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- HERO START -->
+    <section
+      class="flex flex-col h-screen bg-center bg-cover mb-[100px]"
+      style="background-image: url('dist/img/bg-intro.png')">
+      <div class="flex-1 flex items-center">
+        <div class="text-center mx-auto">
+          <p class="font-semibold text-[#4b77be] mb-2">
+            SELAMAT DATANG STARTX INDONESIA
+          </p>
+          <h2
+            class="font-semibold sm:text-4xl lg:text-6xl text-3xl text-[#102b3e] mb-3">
+            Perusahaan Pengembang
+          </h2>
+          <h2
+            class="font-semibold sm:text-4xl lg:text-6xl text-3xl text-[#4b77be]">
+            Perangkat Lunak & Agensi Digital
+          </h2>
+          <!-- Button -->
+          <div class="btn-hero">
+            <a href="#">
+              <button class="">Selengkapnya</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HERO END -->
+
+    <!-- SERVICE START -->
+    <section id="services" class="pt-36 pb-16 bg-[#fff] font-Poppins">
+      <div class="container mx-auto">
+        <div class="w-full px-4">
+            <h1
+              class="font-bold text-[#4b77be] text-center md:text-xl mb-3"
+              data-aos="fade-up"
+              data-aos-duration="500">
+              PELAYANAN IT & MULTIMEDIA UNTUK MELENGKAPI KEBUTUHAN ANDA
+            </h1>
+            <h1
+              class="font-bold text-[#A9071C] text-center text-4xl drop-shadow-sm mb-5"
+              data-aos="fade-up"
+              data-aos-duration="500">
+              <span class="text-[#102b3e]">Effective Growth Strategies, Converting <br> Websites & Online Marketing.
+            </h1>
+
+            <div class="text-center mb-10">
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-40 h-1 rounded-full bg-indigo-500"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                </div>
+
+            <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+              <!--Card 1-->
+              <div class="rounded-t-2xl overflow-hidden hover:scale-110 ">
+                <img class="w-full" src="dist/img/services/service-3.png" alt="Startx Technology">
+                <div class=" py-4">
+                  <div class="font-bold text-xl mb-2 hover:text-[#4b77be] transition">Startx Technology</div>
+                  <p class="text-gray-700 text-base">
+                    Pengembangan perangkat lunak website (Web Development), aplikasi telepon pintar (Android Development) dan integrasi sistem.
+                  </p>
+                </div>
+                <div class="pt-4 pb-2">
+                 <button class="btn-cta">
+                      <p>Selengkapnya</p>
+                      <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                      </svg>
+                  </button>
+                </div>
+              </div>
+              <!--Card 2-->
+              <div class="rounded-t-2xl overflow-hidden">
+                <img class="w-full" src="dist/img/services/service-2.png" alt="Startx Digital">
+                <div class="py-4">
+                  <div class="font-bold text-xl mb-2 hover:text-[#4b77be] transition">Startx Digital</div>
+                  <p class="text-gray-700 text-base">
+                    Pengembangan grafis dan video dalam motion atau animasi untuk kebutuhan promosi dan komunikasi visual.
+                  </p>
+                </div>
+                <div class="pt-4 pb-2">
+                  <button class="btn-cta">
+                      <p>Selengkapnya</p>
+                      <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                      </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!--Card 3-->
+              <div class="rounded-t-2xl overflow-hidden">
+                <img class="w-full" src="dist/img/services/service-1.png" alt="Startx Solution">
+                <div class="py-4">
+                  <div class="font-bold text-xl mb-2 hover:text-[#4b77be] transition">Startx Solution</div>
+                  <p class="text-gray-700 text-base">
+                    Pengembangan jaringan lokal ataupun terpusat (Network), jalur koneksi pribadi (VPN Server), penyimpanan berkas (Storage Server).
+                  </p>
+                </div>
+                <div class="pt-4 pb-2">
+                  <button class="btn-cta">
+                      <p>Selengkapnya</p>
+                      <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                      </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICE END -->
+    
+    <!-- PORTFOLIO START -->
+    <section id="portfolio" class="pt-36 pb-16 bg-[#fff] font-Poppins">
+      <div class="container mx-auto">
+        <div class="w-full px-4">
+          <h1 class="text-center font-semibold sm:text-xl mb-3 text-[#4b77be]">KAMI MEMBANTU PERUSAHAAN & INSTANSI</h1>
+          <h1 class="text-center font-semibold sm:text-4xl lg:text-4xl text-[#102b3e] text-4xl">Beberapa Proyek Telah Selesai</h1>
+          <div class="text-center mb-10">
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-40 h-1 rounded-full bg-indigo-500"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                </div>  
+          <!-- CARD SECTION -->
+          <section class="bg-white antialiased">
+            <div class="max-w-screen-xl px-4 mx-auto lg:px-6">
+              <div class="grid grid-cols-1 mt-10 text-center sm:mt-16 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+      
+                <!-- Card 1 -->
+                <div class="space-y-2">
+                  <span
+                    class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center rounded-xl">
+                    <img src="dist/img/portfolio/5fef2433e91a6238884874.png" alt="">
+                  </span>
+                  <h3 class="text-2xl font-bold leading-tight text-[#102b3e]">
+                    Itwasda Company Profile
+                  </h3>
+                  <p class="text-lg font-normal text-gray-500">
+                      </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="space-y-2">
+                  <span
+                    class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center rounded">
+                    <img src="dist/img/portfolio/607d9cbf1dd32482140691.png" alt="">
+                  </span>
+                  <h3 class="text-2xl font-bold leading-tight text-[#102b3e]">
+                    Terrakomunika Website
+                  </h3>
+                  <p class="text-lg font-normal text-gray-500">
+                      </p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="space-y-2">
+                  <span
+                    class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center rounded">
+                    <img src="dist/img/portfolio/607d9dfe74c47097719137.png" alt="">
+                  </span>
+                  <h3 class="text-2xl font-bold leading-tight text-[#102b3e]">
+                    Kampus Fair Website
+                  </h3>
+                  <p class="text-lg font-normal text-gray-500">
+                      </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="space-y-2">
+                  <span
+                    class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center rounded">
+                    <img src="dist/img/portfolio/607dd1a98789d917328061.png" alt="">
+                  </span>
+                  <h3 class="text-2xl font-bold leading-tight text-[#102b3e]">
+                    Pengaduan Masyarakat Mobile & Website Application
+                  </h3>
+                  <p class="text-lg font-normal text-gray-500">
+                      </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="space-y-2">
+                  <div
+                    class="text-gray-900 text-xs font-medium inline-flex items-center rounded">
+                    <img src="dist/img/portfolio/6200fb0caac9b676289170.png" alt="">
+                  </div>
+                  <h3 class="text-2xl font-bold leading-tight text-[#102b3e]">
+                    Sadari Online Appointment
+                  </h3>
+                  <p class="text-lg font-normal text-gray-500">
+                      </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="space-y-2">
+                  <span
+                    class="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center rounded">
+                    <img src="dist/img/portfolio/6200fb2f9e4b0780808006.png" alt="">
+                  </span>
+                  <h3 class="text-2xl font-bold leading-tight text-[#102b3e]">
+                    Andalan Internet Billings
+                  </h3>
+                  <p class="text-lg font-normal text-gray-500"></p>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+      </div>
+    </section>
+    <!-- PORTFOLIO END -->
+    
+    <!-- TESTIMONIAL START -->
+    <section id="testiomonial" class="pt-36 pb-16 bg-[#fff] font-Poppins">
+      <div class="container mx-auto">
+        <div class="w-full px-4">
+          <h1 class="text-center font-semibold sm:text-xl mb-3 text-[#4b77be]">TESTIMONIAL</h1>
+          <h1 class="text-center font-semibold sm:text-4xl lg:text-4xl text-[#102b3e] text-4xl">Kiriman Pelanggan</h1>
+        </div>
+
+        <div class="text-center mb-10">
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-40 h-1 rounded-full bg-indigo-500"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                </div>
+        
+        <div class="-mx-3 md:flex items-start mt-14">
+                <div class="px-3 md:w-1/3">
+                    <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                        <div class="w-full flex mb-4 items-center">
+                            <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                <img src="https://i.pravatar.cc/100?img=1" alt="">
+                            </div>
+                            <div class="flex-grow pl-3">
+                                <h6 class="font-bold text-sm uppercase text-gray-600">Kenzie Edgar.</h6>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                        </div>
+                    </div>
+                    <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                        <div class="w-full flex mb-4 items-center">
+                            <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                <img src="https://i.pravatar.cc/100?img=2" alt="">
+                            </div>
+                            <div class="flex-grow pl-3">
+                                <h6 class="font-bold text-sm uppercase text-gray-600">Stevie Tifft.</h6>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dolore quod necessitatibus, labore sapiente, est, dignissimos ullam error ipsam sint quam tempora vel.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 md:w-1/3">
+                    <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                        <div class="w-full flex mb-4 items-center">
+                            <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                <img src="https://i.pravatar.cc/100?img=3" alt="">
+                            </div>
+                            <div class="flex-grow pl-3">
+                                <h6 class="font-bold text-sm uppercase text-gray-600">Tommie Ewart.</h6>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                        </div>
+                    </div>
+                    <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                        <div class="w-full flex mb-4 items-center">
+                            <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                <img src="https://i.pravatar.cc/100?img=4" alt="">
+                            </div>
+                            <div class="flex-grow pl-3">
+                                <h6 class="font-bold text-sm uppercase text-gray-600">Charlie Howse.</h6>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto inventore voluptatum nostrum atque, corrupti, vitae esse id accusamus dignissimos neque reprehenderit natus, hic sequi itaque dicta nisi voluptatem! Culpa, iusto.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 md:w-1/3">
+                    <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                        <div class="w-full flex mb-4 items-center">
+                            <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                <img src="https://i.pravatar.cc/100?img=5" alt="">
+                            </div>
+                            <div class="flex-grow pl-3">
+                                <h6 class="font-bold text-sm uppercase text-gray-600">Nevada Herbertson.</h6>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem porro obcaecati dicta, quibusdam sunt ipsum, laboriosam nostrum facere exercitationem pariatur deserunt tempora molestiae assumenda nesciunt alias eius? Illo, autem!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                        </div>
+                    </div>
+                    <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                        <div class="w-full flex mb-4 items-center">
+                            <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                <img src="https://i.pravatar.cc/100?img=6" alt="">
+                            </div>
+                            <div class="flex-grow pl-3">
+                                <h6 class="font-bold text-sm uppercase text-gray-600">Kris Stanton.</h6>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto, explicabo, cupiditate quas totam!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </section>
+    <!-- TESTIMONIAL END -->
+
+    <!-- Contact Start -->
+    <section class="bg-white pb-40 ">
+    <div class="container px-6 py-12 mx-auto">
+        <div>
+            <p class="font-medium text-blue-500 ">Kontak Kami</p>
+
+            <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl ">Chat Dengan Tim Kami</h1>
+
+            <p class="mt-3 text-gray-500">Kami ingin mendengar pendapat Anda. Silakan isi formulir ini atau kirimkan email kepada kami.</p>
+        </div>
+
+        <div class=" mb-10">
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-64 h-1 rounded-full bg-indigo-500"></span>
+                    <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                    <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
+                </div>
+
+        <div class="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
+            <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+                <div>
+                    <span class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                    </span>
+
+                    <h2 class="mt-4 text-base font-medium text-gray-800 ">Email</h2>
+                    <p class="mt-2 text-sm text-gray-500">Tim kami yang ramah siap membantu.</p>
+                    <p class="mt-2 text-sm text-blue-500 ">startxdigital@gmail.com</p>
+                </div>
+
+
+                <div>
+                    <span class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                        </svg>
+                    </span>
+                    
+                    <h2 class="mt-4 text-base font-medium text-gray-800 ">Kantor</h2>
+                    <p class="mt-2 text-sm text-gray-500">Ayo sapa di kantor pusat kami.</p>
+                    <p class="mt-2 text-sm text-blue-500 ">Lopang Indah blok f43 No 10</p>
+                </div>
+
+                <div>
+                    <span class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                        </svg>
+                    </span>
+                    
+                    <h2 class="mt-4 text-base font-medium text-gray-800 ">Telepon</h2>
+                    <p class="mt-2 text-sm text-gray-500">Senin-Jumat dari jam 8 pagi sampai jam 5 sore.</p>
+                    <p class="mt-2 text-sm text-blue-500 ">(0254) 7913679</p>
+                </div>
+            </div>
+
+            <div class="p-4 py-6 rounded-lg bg-gray-50  md:p-8">
+                <form>
+                    <div class="-mx-2 md:items-center md:flex">
+                        <div class="flex-1 px-2">
+                            <label class="block mb-2 text-sm text-gray-600 ">First Name</label>
+                            <input type="text" placeholder="First Name " class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                        </div>
+
+                        <div class="flex-1 px-2 mt-4 md:mt-0">
+                            <label class="block mb-2 text-sm text-gray-600 ">Last Name</label>
+                            <input type="text" placeholder="Last Name" class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <label class="block mb-2 text-sm text-gray-600 ">Email</label>
+                        <input type="email" placeholder="Email" class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                    </div>
+
+                    <div class="w-full mt-4">
+                        <label class="block mb-2 text-sm text-gray-600 ">Pesan</label>
+                        <textarea class="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Pesan"></textarea>
+                    </div>
+
+                    <button class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                        Send message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+      </section>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+      <footer
+        class="flex flex-col items-center text-center text-white"
+        style="background-color: #4b77be">
+        <div class="container p-6">
+          <div class="">
+            <p class="flex items-center justify-center">
+              <span class="mr-4">Register for free</span>
+          
+            </p>
+          </div>
+        </div>
+
+        <!--Copyright section-->
+        <div
+          class="w-full p-4 text-center"
+          style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2023
+          <a class="text-white" href="https://www.instagram.com/startxdigital/">All Rights Reserved By Startx Digital Indonesia</a>
+        </div>
+      </footer>
+    <!-- Footer End-->
+
+    <!-- Javascript -->
+    <script src="dist/js/script.js"></script>
+
+  </body>
+</html>

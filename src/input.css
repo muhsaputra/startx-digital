@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Humberger */
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white;
+  backdrop-filter: blur(4px);
+}
+
+.hamburger-line {
+  @apply w-[30px] h-[3px] my-2 block bg-[#4b77be];
+  border-radius: 10px;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+/* Hero Button */
+.btn-hero {
+  --color: #4b77be;
+  font-family: inherit;
+  display: inline-block;
+  width: 9em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 30px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 25px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.btn-hero:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.btn-hero:hover {
+  color: #fff;
+}
+
+.btn-hero:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.btn-hero:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.btn-hero:active:before {
+  background: #5786d3;
+  transition: background 0s;
+}
+
+/* Button CTA */
+.btn-cta {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+}
+
+.btn-cta {
+  --primary-color: #102b3e;
+  --hovered-color: #4b77be;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 18px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.btn-cta p {
+  margin: 0;
+  position: relative;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.btn-cta::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+.btn-cta p::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Selengkapnya";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.btn-cta:hover::after {
+  width: 100%;
+}
+
+.btn-cta:hover p::before {
+  width: 100%;
+}
+
+.btn-cta:hover svg {
+  transform: translateX(4px);
+  color: var(--hovered-color);
+}
+
+.btn-cta svg {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
